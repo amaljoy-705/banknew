@@ -1,0 +1,42 @@
+<!-- <div class="container w-25 p-3 text-center g" style="margin-top: 150px;">
+    <h1 class="text-center text white">LOGIN</h1>
+    <form action="">
+        <input class="form-control" type="text" placeholder="account number"><br>
+        <input class="form-control" type="password" placeholder="password"><br>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div> -->
+
+<!-- <div class="p-5 mt-3">
+  <h3 class="text-white container"></h3>
+</div> -->
+<h2 class="text-warning">{{data}}</h2>
+<div
+style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 8rem;"
+>
+
+  <div class="inputBox">
+    <h1 class="text-center text white">LOGIN</h1>
+
+    <!-- <input type="text" id="acn" name="acno"[placeholder]="data1" required> -->
+    <input (change)="acnoChange($event)" type="text" id="acn" name="acno" required />
+
+    <span>Account Number</span>
+  </div>
+  <br />
+
+  <div class="inputBox">
+    <div class="inputBox">
+      <input [type]="pd" #pwd id="psw" name="password" required />
+      <span>password</span>
+    </div>
+    <br />
+  </div>
+  <button  (click)="login(pwd)" type="submit" class="btn btn-primary " >Login</button>
+  <p class="mt-2  text-white text-center">
+    Don't have account
+    <a class="text-warning" routerLink="register">Create acount</a>
+  </p>
+</div>
