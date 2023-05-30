@@ -25,8 +25,12 @@ view  - component
   1.2 -view to component
     1.2.1 - event binding (eventName)='methodName()'
     1.2.2 - $event binding (eventName)='methodName($event)'
-    1.2.3 - event binding with template rendering variable
+    1.2.3 - event binding with template rendering variable  (event)='method(templateRenderingVarible)'
+
 2. two way data binding
+
+    2.1  ngModel
+                  -> FormsModule  - module
 
 
 
@@ -37,5 +41,15 @@ life cycle blocks of angular component
 
 constructor --> ngOnit--> other methods
 
+
+
+Dependency Injecion
+-------------------
+
+used to acess datas and metods of one class in another class(like inheritance)
+-> inside constructor()
+-> access specifier - private/public
+
+    constructor(private/public reference:ClassName)
 
 
